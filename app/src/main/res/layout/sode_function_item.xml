@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintHeight_min="@dimen/minimum_list_item_height"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/function_expression"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/bold_text_size"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <EditText
+        android:id="@+id/function_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/text_margin"
+        android:autofillHints="string"
+        android:inputType="textNoSuggestions"
+        android:hint="@string/enter_function_here"
+        android:textAppearance="?attr/textAppearanceListItem" />
+</LinearLayout>
